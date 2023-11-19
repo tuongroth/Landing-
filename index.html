@@ -1,15 +1,330 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+                
+</head>
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
 
-<!-- TODO 4: Add titles/subtitles etc. -->
 
-<!-- TODO 5: Add a link to the project pages -->
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+    
+    <style> 
+    
+        *{margin: 0;
+        Padding: 0;
+        Box-sizing: border-box;}
+        
+        a {text-decoration: none;}
+
+        ul   {list-style: none;}
+        
+        .navbar {
+        Position: absolute;
+        Top: 0;
+        Left: 0;
+        Display: flex;
+        Width: 100%;
+        Justify-content: space-between;
+         Padding: 20px;
+         color: whitesmoke;
+   }
+        body , html  {overflow-x: hidden;}
+        
+        .active{ color: #fc036b;
+        Text-decoration: underline;
+        Font-weight: bold;}
+        
+        .nav-link
+        {display: flex;
+        Align-items: center;
+        }
+        
+        .nav-link li
+        {margin: 0 30px;
+        }
+        
+        .ctn   {
+            padding: 8px 15px;
+        background: #fc036b;
+    border-radius: 30px;
+color: whitesmoke;}
+        
+        Header {
+        Width: 100vw;
+        Height: 100vh;
+        Background-image: url("./header-bg.png");
+        Background-position: bottom;
+        Background-size: cover;
+        Display: flex; 
+        Justify-content: center;
+        Align-items: flex-end;}
+        
+        .header-content{
+        Margin-bottom: 150px;
+        Color: whitesmoke;
+        Text-align: center;
+        }
+        
+        
+        
+        .header-content h2
+        {font-size: 4vmin;}
+        
+        .line {width: 150px;
+        Height: 4px; 
+        Background: #fc036b;
+        Margin: 10px auto; 
+        Border-radius: 5px;}
+          
+        
+        .header-content h1{
+        Font-size: 7vmin;
+        Margin-top: 50px;
+        Margin-bottom: 30px; }
+        
+        .ctn{padding: 8px 15px;
+        Background: #fc036b;
+        Border-radius: 30px;
+        Color: whitesmoke;
+        }
+        
+        .menu-btn  {
+position: absolute;
+top: 30px;
+right: 30px;
+width: 40px;
+cursor: pointer;
+}
+        .line {width: 150px;
+        Height: 4px;
+        Background: #fc036b;
+        Margin: 10px auto;
+        Header: 5px; }
+        
+        
+        Section
+        {
+        Width: 80%;
+        Margin: 80px auto;
+        }
+        
+        .title
+        {text-align: center;
+        Font-size:4vmin;
+        Color: #49497e;}
+        
+        
+        .row{ 
+        Display: flex;
+        Align-items: center;
+        Width: 100%;
+        Justify-content: space-between;
+     
+        }
+        
+        .row .col 
+        {display: flex;
+        Flex-direction: column;
+        align-items: center;
+        width: 80%; 
+        }
+        
+        
+        .events .row {
+        Margin-top: 50px;}
+        
+        H4
+        {font-size: 3vmin;
+        Color: #484872;
+        Margin: 20px auto;}
+        
+        P{color: #7c7c7c;
+        Margin: 0px 40px;}
+        
+        .events .ctn
+        {margin-top: 30px;}
+
+
+
+.explore
+{width: 100%;
+Height: 80vh; 
+Background-image: url('./bg2.png');
+Background-position: center;
+
+Background-repeat: no-repeat;
+Background-size: cover; 
+Display: flex; 
+Align-items: center;}
+
+
+.explore-content
+{
+Width: 60%;
+Padding:50px;
+Color: whitesmoke;
+Display: flex;
+Align-items: center;
+Flex-direction: column;
+}
+.explore-content h1
+{font-size: 7vmin;
+} 
+
+.explore-content .line 
+{margin-bottom: 50px; }
+
+.explore-content p
+{color: rgb(221, 221, 221);}
+
+.explore-content .ctn
+{margin-top: 40px;}
+
+
+.content-col{width: 40%;}
+
+.image-col{width: 60%;}
+
+
+.tours .row .col
+{
+Width: 50%;}
+
+.tours .image-gallery
+{display: flex;
+Flex-wrap: wrap;
+width: 100%;
+Text-align: center;}
+
+.image-gallery img 
+{max-width: 250px;
+Margin: 10px; } 
+
+.content-col h1
+{font-size: 7vmin;
+Color: #484472;
+}
+
+.content-col .line
+{margin-left: -1px;}
+
+.content-col p
+{ padding: 0;
+Margin: 30px auto;}
+
+.content-col .ctn 
+{margin-left: -100px;}
+
+.footer
+{width:100%;
+Min-Height: 100px; 
+Margin: 0; 
+Padding: 20px 80px;
+Text-align: center; 
+Background: #4848472}
+
+.footer p 
+{ margin: 20px auto; 
+Color: whitesmoke;}
+
+
+.color-content .ctn
+{margin-top: 40px;}
+
+.content-col 
+{width: 40%;}
+
+.image-col
+{width: 60%;}
+
+        </style>
+
+    
+    <body>
+        <nav class="navbar">
+            <h1 class="logo">ADVENTURE</h1>
+            <ul class="nav-link">
+            <li><a href="#" class="active" >Home</a> </li>
+                 <li> <a href="#" ></a> Tours</li>
+            <li> <a href="#" ></a>Explore </li>
+            <li> <a href="#" ></a>About </li>
+            <li class="ctn"><a href="#"></a>Contact</li></ul>
+           <img src="./menu-btn.png" />
+        
+        </nav>
+              
+            <header>
+                <div class="header-content">
+            
+                <h2>Explore The Colorful World</h2>
+                <div class="line"></div>
+                <h1>A WONDERFUL GIFT</h1>
+                <a href="#" class="ctn" >Learn More</a>
+                </div>
+    </header>
+
+
+    <section class="events">
+        <div class="title">
+        <h1> Upcoming Events </h1>
+        <div class= "line"> </div>
+        </div>
+        
+        <div class="row">
+        <div class="col">
+        <img src="./img1.png" alt="">
+        <h4>Everest Camp Trek</h4>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+        <a href="#" class="ctn" >Learn More</a>
+        </div>
+        
+        <div class="col">
+        <img src="./img2.png" alt=""/>
+        <h4>Walking Holiday</h4>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+        <a href="#" class="ctn" >Learn More</a>
+       </div> </div> </section>
+
+   
+    <section class="explore">
+        <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"> </div>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+        <a href="#" class="ctn" >Learn More</a>
+        </div>
+        </section>
+    
+    <section class="tours">
+    <div class="row">
+    <div class="col content-col">
+    <h1>UPCOMING TOUR AND DESTINATION </h1>
+    <div class="line"> </div>
+    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+    <a href="#"class="ctn" >Learn More</a>
+    </div>
+    
+    <div class="col image-col">
+    <div class="image-gallery">
+    <img src="./img3.png" alt="">
+    <img src="/img4.png" alt="">
+    <img src="/img5.png" alt="">
+    <img src="./img6.png" alt="">
+   </div></div></div></section>
+
+    <section class="footer">
+    <p></p>
+    <p></p>
+    </section>
+    
+   
+          
+            
+    </body></html>
